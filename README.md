@@ -26,12 +26,13 @@ Este é um projeto **Full Stack** desenvolvido para gerenciar filas e consultas 
 
 ## Estrutura das Pastas
 
+```text
 clinica/
-api-clinica/      # Servidor Python e lógica de negócio
-front-clinica/    # Interface do usuário em React
-db/               # Scripts de criação das tabelas SQL
+├── api-clinica/      # Servidor Python e lógica de negócio
+├── front-clinica/    # Interface do usuário em React
+└── db/               # Scripts de criação das tabelas SQL
 
-- Como rodar o projeto:
+Como rodar o projeto:
 
 1. Banco de Dados
 Execute o script SQL (disponível na pasta /db ou api-clinica) no seu SQL Server para criar as tabelas Pacientes, Médicos e Agendamentos.
@@ -40,7 +41,7 @@ Execute o script SQL (disponível na pasta /db ou api-clinica) no seu SQL Server
 Entre na pasta: cd api-clinica
 
 Inicie o servidor: uvicorn main:app --reload
-A API estará rodando em https://www.google.com/search?q=http://127.0.0.1:8000
+A API estará rodando em: https://www.google.com/url?sa=E&source=gmail&q=http://127.0.0.1:8000
 
 3. Front-end
 Entre na pasta: cd front-clinica
@@ -49,7 +50,7 @@ Instale as dependências: npm install
 
 Inicie o projeto: npm run dev
 Acesse o painel pelo link gerado no terminal (geralmente http://localhost:5173)
-
+```
 ## Próximos Passos:
 - Implementar autenticação de usuários (Login para recepcionistas).
 - Adicionar geração de relatórios de atendimento em PDF.
